@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: black;
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,12 +29,84 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 5px 10px;
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
-  width: 400px;
+  width: 440px;
   margin-bottom: 16px;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 250);
+  flex-basis: 40px;
+  align-items: center;
+  padding: 10px;
+}
+
+.header .left-links, 
+.header .right-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header .left-links{
+  padding-left: 20px;
+}
+
+.header .right-links {
+  padding-right: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap:10px;
+}
+
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 50px;
+  gap:10px;
+  padding:10px;
+}
+
+.footer .left-links,
+.footer .right-links {
+  display: flex;
+  gap:20px;
+}
+
+.footer .left-links {
+  padding-left: 20px;
+}
+
+.footer .right-links {
+  padding-right: 20px;
+}
+
